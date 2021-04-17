@@ -23,15 +23,13 @@ var jt = 0;
 
 var i = 0;
 var j = 0;
+var generations = 0;
 
 function update23(){
-for (var i23 =0; i23<23; i23++){
-   // console.log(i23);
-       onegeneration();
-      
-    }
-     ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
+    let timer = setInterval(function(){update();generations++;}, 500);
+    window.setTimeout(function(){clearInterval(timer);alert(generations);},23*500);  
 }
+
 
 function update(){
   onegeneration();
@@ -71,6 +69,7 @@ function onegeneration(){
             }
         }
     }
+    generations++;
     ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
 }
 var rand1 = 0;
