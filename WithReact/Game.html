@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="project.css">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel" ></script>
+
+</head>
+
+<body>
+    <div id="root">
+        <div id="game-area" class="center">
+            <table id="table">
+
+            </table>
+            <script type="text/babel" src="project.js">
+                createTable();
+            </script>
+        </div>
+        <div id="interface" class="center">
+            <button onclick="update()">Increment 1 Generation</button>
+            <button onclick="update23()">Increment 23 Generations</button>
+            <button onclick="clearAll()">Reset</button>
+             <button onclick="start()">Start</button>
+
+            </select>
+        </div>
+    </div>
+</body>
+
+</html>

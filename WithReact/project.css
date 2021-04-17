@@ -1,0 +1,31 @@
+table {
+    width: 100%;
+}
+
+td {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+#game-area {
+    width: 100%;
+    height: 80%;
+    border: 2px solid black;
+}
+
+#interface {
+    border: 2px solid black;
+    width: 95vw;
+    height: 15vh;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alive {
+    background-color: rosybrown;
+}
