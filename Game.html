@@ -24,11 +24,12 @@
             <button onclick="">Stop Game</button>
             <button onclick="">Increment 1 Generation</button>
             <button onclick="">Increment 23 Generations</button>
-            <button onclick="">Reset</button>
-            <select>
-                <option value="">Block</option>
-                <option value="">Blinker</option>
-                <option value="">Beacon</option>
+            <button onclick="clearAll()">Reset</button>
+            <select onchange="shape(this.value)">
+                <option>Patterns</option>
+                <option value="block">Block</option>
+                <option value="blinker">Blinker</option>
+                <option value="beacon">Beacon</option>
             </select>
         </div>
     </div>
