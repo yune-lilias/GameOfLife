@@ -24,17 +24,24 @@ var jt = 0;
 var i = 0;
 var j = 0;
 
+var generations = 0;
+
 function update23(){
-for (var i23 =0; i23<23; i23++){
+  let timer = setInterval(function(){update();}, 500);
+  window.setTimeout(function(){clearInterval(timer);},23*500);  
+/*for (var i23 =0; i23<23; i23++){
    // console.log(i23);
        onegeneration();
       
     }
-     ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
+     ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));*/
 }
 
 function update(){
   onegeneration();
+  generations++;
+  let gen = document.getElementById("gen");
+  gen.innerHTML = ("Generations: "+generations);
    ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
 }
 
