@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="main.css">
-<title>Register</title>
+<title>Login</title>
 <script type="text/javascript" src="rl.js"></script>
 </head>
 <body>
 
 <div class="topnav">
-         <a class="active" href="Game.html">Home</a>
+        <a class="active" href="Game.html">Home</a>
         <a href="register.php">Register</a>
         <a href="login.php">Login</a>
         <a href="about.php">About Us</a>
         </div>
     <?php checkerr();?>
     <div id = 'box'>
-<form action="register-submit.php" method="post" id = 'myForm'
+<form action="login-submit.php" method="post" id = 'myForm'
                 onsubmit="return validate('myForm')" >
 
 <fieldset>
-    <legend>Register</legend>
+    <legend>Login</legend>
     <div class = 'error' id='unerr'><br></div>
     <label>Username:</label> <input type="text" name="un" size="10"><br>
     <div class = 'error' id='pwerr'><br></div>
