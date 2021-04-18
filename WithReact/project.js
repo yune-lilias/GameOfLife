@@ -76,15 +76,21 @@ function onegeneration(){
 var rand1 = 0;
 var rand2 = 0;
 
-function start(){
-   // Blinker
+function addPattern(){
+  var e = document.getElementById('pattern');
+  var pattern = e.options[e.selectedIndex].value;
+
+  // Blinker
+  if(pattern == "blinker") {
     rand1 = Math.floor(Math.random() * 20) + 10  
     rand2 = Math.floor(Math.random() * 20) + 10  
     cells[rand1][rand2] = 1;
     cells[rand1][rand2+1] = 1;
     cells[rand1][rand2-1] = 1;
+  }
 
    //Beacon
+  if(pattern == "beacon") {
     rand1 = Math.floor(Math.random() * 20) + 10  
     rand2 = Math.floor(Math.random() * 20) + 65  
     cells[rand1][rand2] = 1;
@@ -93,8 +99,10 @@ function start(){
     cells[rand1+2][rand2+3] = 1;
     cells[rand1+3][rand2+2] = 1;
     cells[rand1+3][rand2+3] = 1;
+  }
     
     //Beehive
+  if(pattern == "beehive") {
     rand1 = Math.floor(Math.random() * 20) + 10  
     rand2 = Math.floor(Math.random() * 20) + 40  
     cells[rand1][rand2] = 1;
@@ -103,8 +111,10 @@ function start(){
     cells[rand1+1][rand2+2] = 1;
     cells[rand1-1][rand2+2] = 1;
     cells[rand1][rand2+3] = 1;
+  }
 
     //spaceship
+  if(pattern == "spaceship") {
     rand1 = Math.floor(Math.random() * 20) + 10  
     rand2 = Math.floor(Math.random() * 5) + 1  
     cells[rand1][rand2] = 1;
@@ -112,9 +122,18 @@ function start(){
     cells[rand1][rand2+2] = 1;
     cells[rand1-1][rand2+2] = 1;
     cells[rand1-2][rand2+1] = 1;
+  }
 
 
     ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
+}
+var start;
+
+function start(){
+  start = setInterval(update, 500);
+}
+function stop(){
+  clearInterval(start);
 }
 
 function clearAll(){

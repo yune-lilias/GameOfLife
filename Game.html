@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <title>Game of Life</title>
     <link rel="stylesheet" href="project.css">
-    <script src="project.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script type="text/babel" ></script>
 
 </head>
 
@@ -15,21 +18,25 @@
             <table id="table">
 
             </table>
-            <script>
+            <script type="text/babel" src="project.js">
                 createTable();
             </script>
         </div>
         <div id="interface" class="center">
-            <button onclick="">Start Game</button>
-            <button onclick="">Stop Game</button>
-            <button onclick="">Increment 1 Generation</button>
-            <button onclick="">Increment 23 Generations</button>
+            <select id="pattern">
+              <option>Patterns</option>
+              <option value="blinker">Blinker</option>
+              <option value="beacon">Beacon</option>
+              <option value="beehive">Beehive</option>
+              <option value="spaceship">Spaceship</option>
+            </select>
+            <button onclick="addPattern()">Add</option>
+            <button onclick="update()">Increment 1 Generation</button>
+            <button onclick="update23()">Increment 23 Generations</button>
             <button onclick="clearAll()">Reset</button>
-            <select onchange="shape(this.value)">
-                <option>Patterns</option>
-                <option value="block">Block</option>
-                <option value="blinker">Blinker</option>
-                <option value="beacon">Beacon</option>
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button
+
             </select>
         </div>
     </div>
