@@ -1,0 +1,190 @@
+label {
+    display: inline-block;
+    width:100px;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    background-color: rgba(255,255,255,0.5);
+    font-weight: 100;
+    border-color: rgba(155,255,155,0.5);
+    box-shadow: 0 3px 5px rgba(155,155,155,0.5);
+    margin-top: 10px;
+   margin-top: 10px;
+   border-radius: 12px;
+}
+
+
+.error {
+    color: red;
+    font-size: 90%;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+* {
+    font-size: 12pt;
+    font-family: "Verdana", "Geneva", sans-serif;
+}
+
+a {
+    color: #F44;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #FFA;
+}
+
+a img {
+    border: none;
+}
+
+div {
+    overflow: hidden;
+}
+
+body {
+    background-image: url('63402383_p0.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed; 
+}
+/* form styles */
+fieldset {
+    background-color: rgba(0,255,0,0.3);
+    border: 2px outset rgb(34,139,34,0.5);
+    border-radius: 30px;
+    box-shadow: inset 0 0 15px 6px rgba(34,139,34,0.8);
+}
+
+div {
+    overflow: hidden;
+}
+
+/* the bold text labels to the left of each form field */
+fieldset strong,
+ul strong,
+fieldset label.left,
+fieldset .column {
+    float: left;
+    width: 11em;
+    padding-top: 5px;
+}
+
+div#box {
+    display: inline-block;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+div#box2 {
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+
+div#box2 > fieldset{
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+div#line{
+    display:inline-block;
+}
+
+div#w3c{
+  position:absolute;
+    bottom:0;
+    right:0;
+}
+
+
+.button{
+    background-color: rgba(255,255,255,0.5);
+    font-size: 120%;
+    font-weight: bold;
+    padding: 3%;
+    border-radius: 30px;
+}
+
+legend {
+    background-color: rgba(255,255,255,1);
+    border: 2px outset gray;
+    padding: 0.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: inline-block;
+    text-align: center;
+    border-radius: 15px;
+    width: 50%;
+    box-shadow: inset 0px 0px 18px #AEE9F0;
+    margin-bottom: 1em;
+}
+
+.topnav {
+  background-color: rgba(48,48,48,0.8);
+  overflow: hidden;
+  position:absolute;
+  top: 0;
+  left :0;
+    width:400px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  width:100px;
+  height:40px;
+  padding-top: 10px;
+}
+
+.picnav {
+  background-color: rgba(48,48,48,0.8);
+  overflow: hidden;
+  position:absolute;
+  right: 0;
+  bottom: 0;
+    width:200px;
+}
+.picnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  width:200px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.picnav a:hover {
+  background-color: green;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.picnav a.active {
+  background-color: blue;
+  color: white;
+}
