@@ -26,7 +26,7 @@
     <div class = 'error' id='pwerr'><br></div>
     <label>Password:</label> <input type="password" name="pw" size="10"><br><br>
 
-    <input type="submit" value="Register">
+    <input type="submit" value="Login">
     </p>
 </fieldset>
 </form>
