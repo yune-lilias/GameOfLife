@@ -134,13 +134,13 @@ function addPattern(){
 
     ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
 }
-var start;
+var timer;
 
 function start(){
-  start = setInterval(update, 500);
+  timer = setInterval(update, 500);
 }
 function stop(){
-  clearInterval(start);
+  clearInterval(timer);
 }
 
 function clearAll(){
@@ -149,6 +149,7 @@ function clearAll(){
  //  cellsmask = zeros([row+2,col+2]);
  let text =document.getElementById("gen");
    text.innerHTML = "Generations: 0";
+  generations = 0;
    ReactDOM.render(<App title="Game of life"/>,document.getElementById("game-area"));
 }
 
