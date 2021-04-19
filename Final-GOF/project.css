@@ -1,23 +1,30 @@
+body{
+    background-color: #FF5959;
+}
 table {
     width: 100%;
+    background-color: #FACF5A;
 }
 
 td {
-    border: 1px solid black;
+    border: 1px solid blue;
     width: 10px;
     height: 10px;
+    border-radius: 5px;
 }
 
 #game-area {
     width: 100%;
     height: 80%;
     border: 2px solid black;
+    
 }
 
 #interface {
     border: 2px solid black;
     width: 95vw;
     height: 15vh;
+    background-color: peachpuff;
 }
 
 .center {
@@ -29,3 +36,16 @@ td {
 .alive {
     background-color: rosybrown;
 }
+button, select {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+ 
